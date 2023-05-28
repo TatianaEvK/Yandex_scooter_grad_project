@@ -19,7 +19,8 @@ def get_new_track():
 
 def get_order_body(track):
     params_with_track= {"t": track} 
-    return requests.get(configuration.URL_SERVICE + configuration.RECEIVE_ORDER, params=params_with_track) 
+    return requests.get(configuration.URL_SERVICE + configuration.RECEIVE_ORDER, 
+                        params=params_with_track) 
 
 
 
